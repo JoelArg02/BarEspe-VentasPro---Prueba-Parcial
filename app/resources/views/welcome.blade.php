@@ -32,12 +32,12 @@
                         Iniciar sesión
                     </a>
 
-                    @if (Route::has('register'))
+                    {{-- @if (Route::has('register'))
                         <a href="{{ route('register') }}"
                            class="inline-block px-5 py-1.5 border border-[#ccc] hover:border-[#999] text-[#1b1b18] rounded-sm">
                             Registrarse
                         </a>
-                    @endif
+                    @endif --}}
                 @endauth
             </nav>
         @endif
@@ -75,24 +75,6 @@
             @endforeach
         </section>
 
-        {{-- BENEFICIOS --}}
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            @php
-                $perks = [
-                    ['Implementación exprés',       'Puesta en marcha en menos de 48 horas, sin interrupciones en tu operación.'],
-                    ['Multi-sucursal',              'Centraliza ventas y existencias de todas tus tiendas o puntos de servicio.'],
-                    ['Escalable y modular',         'Añade nuevas funcionalidades cuando tu negocio lo necesite, sin migraciones.'],
-                    ['Seguridad y respaldo',        'Copia diaria automática y cifrado de base de datos de extremo a extremo.'],
-                ];
-            @endphp
-
-            @foreach($perks as [$title, $body])
-                <article class="border-l-4 border-[#f53003] bg-[#fff2f2] rounded-r-lg p-6">
-                    <h3 class="text-lg font-medium">{{ $title }}</h3>
-                    <p class="text-sm">{{ $body }}</p>
-                </article>
-            @endforeach
-        </section>
 
         {{-- SOBRE NOSOTROS --}}
         <section class="flex flex-col lg:flex-row gap-8">
@@ -123,12 +105,12 @@
         </section>
 
         {{-- CTA --}}
-        <section class="text-center mt-8">
+        {{-- <section class="text-center mt-8">
             <a href="{{ route('register') }}"
                class="inline-block px-8 py-3 rounded-sm bg-black text-white hover:opacity-90 transition-opacity">
                 Prueba gratis 14 días
             </a>
-        </section>
+        </section> --}}
     </main>
 </body>
 </html>
